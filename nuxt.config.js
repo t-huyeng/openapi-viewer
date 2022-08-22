@@ -6,6 +6,9 @@ export default {
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  router: {
+    base: '/nuxtjs-gh-pages-openapi/'
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {

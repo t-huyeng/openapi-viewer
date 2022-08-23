@@ -57,6 +57,11 @@ export default {
           title: "Geoportal HE",
           to: "/geoportal-he",
         },
+        {
+          icon: "mdi-map",
+          title: "Geoportal RLP",
+          to: "/geoportal-rlp",
+        },
       ],
       title: "OpenAPI Viewer",
     };

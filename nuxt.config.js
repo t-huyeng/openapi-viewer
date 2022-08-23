@@ -13,7 +13,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - app',
-    title: 'app',
+    title: 'openapi-viewer',
     htmlAttrs: {
       lang: 'en'
     },

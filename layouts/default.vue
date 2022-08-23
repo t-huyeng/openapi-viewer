@@ -53,7 +53,7 @@ export default {
           to: "/bunddev",
         },
       ],
-      title: "OpenAPI",
+      title: "OpenAPI Viewer",
     };
   },
 };

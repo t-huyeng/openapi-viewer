@@ -47,7 +47,7 @@
       <v-card flat>
         <div class="content">
           <h3>
-            <span class="institution">{{ selectedAPI.office }}:</span>
+            <span v-if="selectedAPI.office">{{ selectedAPI.office }}:</span>
             {{ selectedAPI.name }}
           </h3>
           <p>{{ selectedAPI.description }}</p>

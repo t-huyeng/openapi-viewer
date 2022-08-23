@@ -49,8 +49,8 @@ export default {
         },
         {
           icon: "mdi-open-source-initiative",
-          title: "OpenAPI",
-          to: "/openapi",
+          title: "BundDEV",
+          to: "/bunddev",
         },
       ],
       title: "OpenAPI",

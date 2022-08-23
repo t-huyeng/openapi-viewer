@@ -3,19 +3,19 @@
 </template>
 
  <script>
-import SwaggerUIBundle from "~/assets/swagger/swagger-ui-bundle.js";
+import SwaggerUIBundle from "~/assets/swagger/swagger-ui-bundle.min.js";
 export default {
   name: "Swagger-UI",
 
   props: {
-    spec: {
+    url: {
       required: true,
     },
   },
 
   mounted() {
     SwaggerUIBundle({
-      spec: this.spec,
+      url: this.url,
       dom_id: "#swagger",
     });
   },

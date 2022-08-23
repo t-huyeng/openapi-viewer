@@ -3,6 +3,7 @@
     <v-card-title> OpenAPI Documentations </v-card-title>
     <v-card-actions>
       <v-btn text color="teal accent-4" to="bunddev"> BundDEV - APIs </v-btn>
+      <v-btn text color="teal accent-4" to="geoportal-he"> Geoportal HE </v-btn>
     </v-card-actions>
   </v-card>
 </template>

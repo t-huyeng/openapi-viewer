@@ -70,7 +70,7 @@ export default {
           secondary: '#b0bec5',
           accent: '#8c9eff',
           error: '#b71c1c',
-          info: 'transparent',
+          info: '#FFFFFF',
         },
       }
     }

@@ -15,7 +15,7 @@
           </v-list-item-subtitle>
         </v-list-item-content>
 
-        <v-list-item-avatar tile size="80"
+        <v-list-item-avatar tile size="80" class="geoportal-rlp"
           >geoportal.<br />rlp.de
         </v-list-item-avatar>
       </v-list-item>
@@ -30,6 +30,8 @@
         >
           Homepage
         </v-btn>
+        <v-spacer />
+        <v-chip v-if="count" class="geoportal-rlp">{{ count }} APIs</v-chip>
       </v-card-actions>
     </v-card>
     <v-row align="center" justify="center">
@@ -38,11 +40,12 @@
           return-object
           v-model="selectedAPI"
           :items="apis"
-          item-text="name"
+          :item-text="(item) => item.name + ' (' + item.id + ')'"
           @change="update()"
           menu-props="closeOnContentClick"
           clearable
           chips
+          solo
           label="Please select an API"
         ></v-autocomplete>
       </v-col>
@@ -89,6 +92,7 @@ export default {
     url: "",
     selectedAPI: null,
     show: false,
+    count: null,
     rawUrl:
       "https://raw.githubusercontent.com/t-huyeng/geoportal-openapis/main/",
   }),
@@ -110,6 +114,8 @@ export default {
       "https://t-huyeng.github.io/geoportal-openapis/geoportal_rlp.json"
     );
     const data = await response.json();
+    this.count = data.length;
+    console.log(data.length);
     this.apis = data;
   },
 };

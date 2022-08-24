@@ -26,6 +26,8 @@
         >
           GitHub
         </v-btn>
+        <v-spacer />
+        <v-chip v-if="count">{{ count }} APIs</v-chip>
       </v-card-actions>
     </v-card>
     <v-row align="center" justify="center">
@@ -76,6 +78,7 @@ export default {
     url: "",
     selectedAPI: null,
     show: false,
+    count: null,
   }),
 
   methods: {
@@ -94,6 +97,7 @@ export default {
       "https://t-huyeng.github.io/bunddev-apis/"
     );
     const data = await response.json();
+    this.count = data.length;
     this.apis = data;
   },
 };

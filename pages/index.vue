@@ -83,6 +83,33 @@
             </div>
           </v-card>
         </v-col>
+        <v-col cols="12">
+          <v-card class="geoportal-sl" dark>
+            <div class="d-flex flex-no-wrap justify-space-between">
+              <div>
+                <v-card-title class="text-h5"> Geoportal Saarland</v-card-title>
+
+                <v-card-subtitle>
+                  Offene Geodaten des Landes Saarland
+                </v-card-subtitle>
+
+                <v-card-actions>
+                  <v-btn text to="geoportal-sl"> APIs </v-btn>
+                  <v-btn
+                    text
+                    href="https://geoportal.saarland.de/"
+                    target="_blank"
+                  >
+                    Homepage <v-icon right dark> mdi-open-in-new</v-icon>
+                  </v-btn>
+                </v-card-actions>
+              </div>
+              <v-avatar class="ma-3 geoportal-sl-invert" size="80" tile
+                >geoportal.<br />saarland.de
+              </v-avatar>
+            </div>
+          </v-card>
+        </v-col>
       </v-row>
     </v-card-text>
   </v-card>

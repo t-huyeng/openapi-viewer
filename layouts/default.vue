@@ -52,6 +52,21 @@ export default {
           title: "BundDEV",
           to: "/bunddev",
         },
+        {
+          icon: "mdi-map",
+          title: "Geoportal HE",
+          to: "/geoportal-he",
+        },
+        {
+          icon: "mdi-map",
+          title: "Geoportal RLP",
+          to: "/geoportal-rlp",
+        },
+        {
+          icon: "mdi-map",
+          title: "Geoportal SL",
+          to: "/geoportal-sl",
+        },
       ],
       title: "OpenAPI Viewer",
     };

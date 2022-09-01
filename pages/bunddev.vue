@@ -92,10 +92,7 @@ export default {
     },
   },
   async fetch() {
-    const response = await fetch(
-      // TODO use api.bund.dev
-      "https://t-huyeng.github.io/bunddev-apis/"
-    );
+    const response = await fetch("https://api.bund.dev/");
     const data = await response.json();
     this.count = data.length;
     this.apis = data;

@@ -110,6 +110,33 @@
             </div>
           </v-card>
         </v-col>
+        <v-col cols="12">
+          <v-card class="hochwasser-apis" dark>
+            <div class="d-flex flex-no-wrap justify-space-between">
+              <div>
+                <v-card-title class="text-h5"> Hochwasser APIs</v-card-title>
+
+                <v-card-subtitle>
+                  Sammlung von APIs mit Hochwasserbezug
+                </v-card-subtitle>
+
+                <v-card-actions>
+                  <v-btn text to="hochwasser"> APIs </v-btn>
+                  <v-btn
+                    text
+                    href="https://github.com/mo-tark/hochwasser-apisammlung"
+                    target="_blank"
+                  >
+                    Homepage <v-icon right dark> mdi-open-in-new</v-icon>
+                  </v-btn>
+                </v-card-actions>
+              </div>
+              <v-avatar class="ma-3" size="80" tile
+                ><v-icon large> mdi-home-flood</v-icon>
+              </v-avatar>
+            </div>
+          </v-card>
+        </v-col>
       </v-row>
     </v-card-text>
   </v-card>
